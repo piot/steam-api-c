@@ -11,13 +11,10 @@
 extern Atheneum* g_steamApiAtheneum;
 
 #if defined(_WIN32) && !defined(_X360)
-#define S_API
 #define S_CALLTYPE __stdcall
 #elif defined(GNUC) || defined(__clang__)
 #if defined __x86_64__
 #define S_CALLTYPE
-#elseif !defined TORNADO_OS_MACOS
-#define S_CALLTYPE __attribute__((stdcall))
 #else
 #define S_CALLTYPE
 #endif
