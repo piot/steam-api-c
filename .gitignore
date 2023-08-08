@@ -3,3 +3,4 @@ deps*/
 Makefile
 cmake_install.cmake
 CMakeCache.txt
+src/lib/libsteam-api.a
